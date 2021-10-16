@@ -1,0 +1,12 @@
+.m-2 {
+  margin: 0.5rem;
+}
+.limit-width {
+  max-width: 500px;
+}
+.m-auto {
+  margin: auto;
+}
+.is-scrollable-x {
+  overflow-x: scroll;
+}
