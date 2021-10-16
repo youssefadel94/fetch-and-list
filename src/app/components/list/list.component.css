@@ -10,3 +10,8 @@
 .is-scrollable-x {
   overflow-x: scroll;
 }
+@media only screen and (max-width: 1000px) {
+  .is-scrollable-x {
+    overflow-x: hidden;
+  }
+}

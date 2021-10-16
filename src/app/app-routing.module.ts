@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { ListComponent } from "./components/list/list.component";
 const routes: Routes = [
-  { path: "*", redirectTo: "/", pathMatch: "full" }
+  { path: "*", redirectTo: "/", pathMatch: "full" },
   { path: "", component: ListComponent }
 ];
 

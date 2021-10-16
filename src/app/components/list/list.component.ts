@@ -13,22 +13,30 @@ export class ListComponent implements OnInit {
   products: Array<product>;
   displayProducts: Array<product> = [];
   limit = 5;
+
   constructor(private ProductService: ProductService) {
     // this.API_URL = environment.apiURL;
     this.ProductService.getProducts().subscribe((Products) => {
       this.products = Products;
       for (var product in Products) {
         if (
-          // this.products[product]["quantity"] &&
           this.displayProducts.length < this.limit &&
           this.isAvailable(Products[product].variants)
         )
           this.displayProducts.push(this.products[product]);
+        if (this.displayProducts.length === this.limit) break;
       }
-      // console.log(this.displayProducts);
+      console.log(this.displayProducts);
     });
   }
+
   ngOnInit() {}
+
+  /**check if product is available
+   * @param {variant[]} variants
+   * @return {*}  {boolean}
+   * @memberof ListComponent
+   */
   isAvailable(variants: variant[]): boolean {
     var res = false;
     for (var variant in variants) {

@@ -1,7 +1,7 @@
 <section class="section container m-auto">
   <div class="columns m-2 is-scrollable-x">
     <div
-      *ngFor="let product of displayProducts; let i = index"
+      *ngFor="let product of displayProducts | slice:0:5 ; let i = index;"
       class="column is-4"
     >
       <app-product [product]="product"></app-product>

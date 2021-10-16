@@ -1,5 +1,3 @@
-
-
 -product interface: 
   define prodect object attributes and types
 -fetch service: 

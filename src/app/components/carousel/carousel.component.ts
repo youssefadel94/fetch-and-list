@@ -9,7 +9,7 @@ export class CarouselComponent implements OnInit {
   @Input()
   images!: Array<string>;
   img = [];
-  constructor() {}
+  // constructor() {}
 
   ngOnInit() {
     for (var i in this.images) {
