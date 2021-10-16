@@ -11,6 +11,7 @@ import { ProductComponent } from "./components/product/product.component";
 import { ListComponent } from "./components/list/list.component";
 
 import { IvyCarouselModule } from "angular-responsive-carousel";
+import { ProductService } from "./shared/service/product.service";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { IvyCarouselModule } from "angular-responsive-carousel";
     FormsModule,
     IvyCarouselModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

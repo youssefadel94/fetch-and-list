@@ -13,9 +13,10 @@ export class ListComponent implements OnInit {
   products: Array<product>;
   displayProducts: Array<product> = [];
   limit = 5;
-
+  productsService;
   constructor(private ProductService: ProductService) {
     // this.API_URL = environment.apiURL;
+    // this.productsService = new ProductService();
     this.ProductService.getProducts().subscribe((Products) => {
       this.products = Products;
       for (var product in Products) {
