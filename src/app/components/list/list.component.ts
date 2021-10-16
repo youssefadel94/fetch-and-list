@@ -26,7 +26,7 @@ export class ListComponent implements OnInit {
           this.displayProducts.push(this.products[product]);
         if (this.displayProducts.length === this.limit) break;
       }
-      console.log(this.displayProducts);
+      // console.log(this.displayProducts);
     });
   }
 
