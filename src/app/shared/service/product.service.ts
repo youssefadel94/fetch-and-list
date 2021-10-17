@@ -29,7 +29,7 @@ export class ProductService {
    * @param {product[]} Products
    * @param {number} limit
    * @return {*} {product[]}
-   * @memberof ListComponent
+   * @memberof ProductService
    */
   getDisplayProducts(Products: product[], limit: number): product[] {
     var displayProducts = [];
@@ -47,7 +47,7 @@ export class ProductService {
   /**check if product is available
    * @param {variant[]} variants
    * @return {*}  {boolean}
-   * @memberof ListComponent
+   * @memberof ProductService
    */
   isAvailable(variants: variant[]): boolean {
     var res = false;
