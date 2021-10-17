@@ -16,7 +16,6 @@ export class ListComponent implements OnInit {
   constructor(private ProductService: ProductService) {
     this.ProductService.getProducts().subscribe((Products) => {
       this.products = Products;
-      // this.ProductService.sortProducts(Products);
       this.displayProducts = this.ProductService.getDisplayProducts(
         Products,
         this.limit
