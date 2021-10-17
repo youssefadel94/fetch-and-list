@@ -17,7 +17,7 @@ export class ProductService {
 
   constructor(private http: HttpClient) {}
 
-  /**get list of products
+  /**get list of all products
    * @return {*}  {Observable<product[]>}
    * @memberof ProductService
    */
