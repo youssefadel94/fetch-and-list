@@ -43,6 +43,7 @@ export class ProductService {
     }
     return displayProducts;
   }
+
   /**check if product is available
    * @param {variant[]} variants
    * @return {*}  {boolean}
